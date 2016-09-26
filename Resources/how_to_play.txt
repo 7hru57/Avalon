@@ -1,0 +1,34 @@
+Objective:
+  Avalon is a game of hidden loyalty. Players are either Loyal Servants
+  of Arthur fighting for Good or aligned with the Evil ways of Mordred.
+
+  Good wins the game by Successfully completing 3 Quests and concealing
+  the identity of Merlin.
+  Evil wins the game by Failing 3 Quests or by assassinating Merlin.
+
+Special Characters:
+  Minion    [Evil]    All Evil players know each other
+  Assassin  [Evil]    Dictates who to assassinate as Merlin
+  Merlin    [Good]    Knows all Evil players
+
+Optional Characters:
+  Percival  [Good]    Knows who Merlin is
+  Mordred   [Evil]    Evil player concealed from Merlin
+  Morgana   [Evil]    Impersonates Merlin, revealed with Merlin to Percival
+                      without indication of who is who (Requires Percival)
+  Oberon    [Evil]    Evil player that does not know the other Evil players
+                      nor do the Evil players know this player's Identity
+
+Game Play:
+
+Team Building:
+1. Players will take turn being Team Leader and will lead a discussion on 
+   who to bring on a quest.
+2. Once the Team Leader finalizes their Team, all players will secretly 
+   vote on if they Approve or Reject the Team.
+   2a. If the majority vote is Approve, the Team will go on a Quest.
+   2b. If the majority vote is Reject, the role of Team Leader passes on 
+       to the next player and the Team Building phase is repeated.
+       i. If 5 Teams are rejected consecutively, Evil Wins.
+
+Quest Phase:
