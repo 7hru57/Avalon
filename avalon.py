@@ -3,15 +3,15 @@
    Python Version: 2.7
    Description: A game of hidden Loyalties"""
 
-#Resources Directory
+#Absolute File Path to Resources Directory
 import sys, os
-res_direct = os.path.dirname(os.path.abspath(__file__)) + '/Resources/'
-sys.path.append(res_direct)
+afp = os.path.dirname(os.path.abspath(__file__)) + '/Resources/'
+sys.path.append(afp)
 
 #Modules
 import control
 import menu_control
-how_to_play = res_direct + 'how_to_play.txt'
+how_to_play = afp + 'how_to_play.txt'
 
 #Classes
 nav = control.Navigation()
