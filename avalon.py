@@ -24,18 +24,20 @@ game_active = True
 while game_active == True:
 
 	#Display Main Menu
+	print(chr(27) + "[2J")									#Escape Sequence
 	selected_menu = menu.display_menu(menu_id= 1)
-	#selected_menu = 2
 
 	#If Selected Menu is not close game
 	if selected_menu != nav.command[1]:
 
 		#Play Game
-		if selected_menu == 1:
+		if selected_menu == '1':
+			print(chr(27) + "[2J")							#Escape Sequence
 			print("1")
 
 		#How to Play
-		elif selected_menu == 2:
+		elif selected_menu == '2':
+			print(chr(27) + "[2J")							#Escape Sequence
 
 			#Read how_to_play.txt 
 			with open(how_to_play) as file_object:
@@ -43,10 +45,10 @@ while game_active == True:
 				print(contents)
 
 			raw_input("Press the enter key to return to the Main Menu.")
-			game_active = False #Kill game
 
 		#Settings
-		elif selected_menu == 3:
+		elif selected_menu == '3':
+			print(chr(27) + "[2J")							#Escape Sequence
 
 			#Display Setting Menu
 			selected_setting = menu.display_menu(menu_id= 2)
@@ -63,8 +65,10 @@ while game_active == True:
 					raw_input("You dun' broke it")
 
 		#Leaderboard
-		elif selected_menu == 4:
-			print("2")
+		elif selected_menu == '4':
+			print(chr(27) + "[2J")							#Escape Sequence
+			print("Leaderboard in development.")
+			raw_input("Press the enter key to return to the Main Menu.")
 
 		else:
 			raw_input("You're tearin' up my heart when I'm with you~")

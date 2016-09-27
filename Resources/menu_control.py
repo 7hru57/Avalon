@@ -55,11 +55,19 @@ class EnumeratedMenu(object):
 			ext_cmd = self.selected_menu.ext_cmd
 			)
 
-		val_menu = raw_input()
 		#Validate user selection
-		#val_menu = val.
+		user_selection = raw_input()
+		val_menu = val.enum_item_selected(
+								selected_item= user_selection, 
+								menu_items= list(self.selected_menu.menu_items.keys()), 
+								ext_cmd = self.selected_menu.ext_cmd
+								)
+
 
 		return val_menu
+
+#dis = EnumeratedMenu()
+#dis.display_menu(1)
 
 
 
